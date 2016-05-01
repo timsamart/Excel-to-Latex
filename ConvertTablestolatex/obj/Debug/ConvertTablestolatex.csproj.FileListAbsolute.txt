@@ -1,0 +1,9 @@
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\bin\Debug\ConvertTablestolatex.exe.config
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.csprojResolveAssemblyReference.cache
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.Properties.Resources.resources
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.csproj.GenerateResource.Cache
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\bin\Debug\ConvertTablestolatex.exe
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\bin\Debug\ConvertTablestolatex.pdb
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.exe
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.pdb
+D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\MiscUtil.IO.LineReader.resources
