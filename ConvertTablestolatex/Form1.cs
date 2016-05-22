@@ -10,6 +10,77 @@ using System.Windows.Forms;
 using System.IO;
 using System.Collections;
 
+namespace ConvertTablestolatex
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+
+            string str = textBox1.Text;
+
+            string columns = "";
+            char b = '0';
+            int i = 0;
+            int countcolumns = 0;
+            while (b != '\n')
+            {
+                b = str[i];
+                if (b == '\t')
+                {
+                    countcolumns++;
+                    columns += "D ";
+                }
+                i++;
+            }
+            columns += "D ";
+
+            string startstr = "\\begin{table}[h!]\n\\newcolumntype{D}{>{\\centering\\arraybackslash}m{0.14\\textwidth}}\n\\newcolumntype{B}{>{\\centering\\arraybackslash}m{ 0.17\\textwidth}}\n\\centering\n\\caption{"
+               + textBox3.Text + "}\n\\begin{tabular}{| "
+               + columns + "|}\\hline\\hline\n";
+            string endstr = "\\end{tabular}\n\\label{table:" + textBox4.Text +"}\n\\end{table}\n";
+
+            string strlatex = "";
+            string strlatex2 = "";
+            strlatex = str.Replace("\t", "$ & $");
+            string output = "";
+            foreach (string line in new MiscUtil.IO.LineReader(() => new StringReader(strlatex)))
+            {
+                string my1 = line.Insert(0, "$");
+                output += my1.Insert(my1.Length, "$ \\\\\\hline" + Environment.NewLine);
+            }
+            strlatex2 = output.Replace("$$", "");
+            textBox2.Text = startstr + strlatex2 + endstr;
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.SelectAll();
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.SelectAll();
+        }
+
+        private void textBox4_Click(object sender, EventArgs e)
+        {
+            textBox4.SelectAll();
+        }
+
+        private void textBox3_Click(object sender, EventArgs e)
+        {
+            textBox3.SelectAll();
+        }
+    }
+}
+
 namespace MiscUtil.IO
 {
     /// <summary>
@@ -105,28 +176,4 @@ namespace MiscUtil.IO
     }
 }
 
-namespace ConvertTablestolatex
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string str = textBox1.Text;
-            string strlatex = "";
-            strlatex = str.Replace("\t", "$ & $");
-            string output = "";
-            foreach (string line in new MiscUtil.IO.LineReader(() => new StringReader(strlatex)))
-            {
-                string my1 = line.Insert(0, "$");
-                output += my1.Insert(my1.Length, "$ \\\\\\hline"+Environment.NewLine);
-            }
-            textBox2.Text = output;
-        }
-
-    }
-}
