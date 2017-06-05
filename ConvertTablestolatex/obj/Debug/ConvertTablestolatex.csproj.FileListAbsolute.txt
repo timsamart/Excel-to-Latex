@@ -7,3 +7,12 @@ D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\bin\
 D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.exe
 D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.pdb
 D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Debug\MiscUtil.IO.LineReader.resources
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\bin\Debug\ConvertTablestolatex.exe.config
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.exe
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.pdb
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\bin\Debug\ConvertTablestolatex.exe
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\bin\Debug\ConvertTablestolatex.pdb
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.csprojResolveAssemblyReference.cache
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.Form1.resources
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.Properties.Resources.resources
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Debug\ConvertTablestolatex.csproj.GenerateResource.Cache

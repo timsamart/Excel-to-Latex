@@ -7,3 +7,12 @@ D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\
 D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.exe
 D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.pdb
 D:\Projects 2\Development\Lexical\ConvertTablestolatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.Form1.resources
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\bin\Release\ConvertTablestolatex.exe.config
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.exe
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.pdb
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\bin\Release\ConvertTablestolatex.exe
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\bin\Release\ConvertTablestolatex.pdb
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.csprojResolveAssemblyReference.cache
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.Form1.resources
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.Properties.Resources.resources
+C:\Content\Software\TSamartzidis\Gits\ExcelToLatex\ConvertTablestolatex\obj\Release\ConvertTablestolatex.csproj.GenerateResource.Cache

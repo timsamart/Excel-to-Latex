@@ -21,7 +21,23 @@ namespace ConvertTablestolatex
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            //0
+            string aligntopapersize0 = "\\resizebox{\\textwidth}{!}{%\n";
+            string aligntopapersize1 = "}";
+            if (checkedListBox1.GetItemCheckState(0) != CheckState.Checked)
+            {
+                aligntopapersize0 = "";
+                aligntopapersize1 = "";
+            }
+
+            //!
+            string columntype = "D";
+            string customsizedcolumns = "\\newcolumntype{D}{>{\\centering\\arraybackslash}m{0.14\\textwidth}}\n\\newcolumntype{B}{>{\\centering\\arraybackslash}m{ 0.17\\textwidth}}\n\\centering\n";
+            if (checkedListBox1.GetItemCheckState(1) == CheckState.Checked)
+            {
+                customsizedcolumns = "";
+                columntype = "c";
+            }
 
             string str = textBox1.Text;
 
@@ -35,16 +51,17 @@ namespace ConvertTablestolatex
                 if (b == '\t')
                 {
                     countcolumns++;
-                    columns += "D ";
+                    columns += (columntype + " ");
                 }
                 i++;
             }
-            columns += "D ";
+            columns += (columntype + " ");
+            
 
-            string startstr = "\\begin{table}[h!]\n\\newcolumntype{D}{>{\\centering\\arraybackslash}m{0.14\\textwidth}}\n\\newcolumntype{B}{>{\\centering\\arraybackslash}m{ 0.17\\textwidth}}\n\\centering\n\\caption{"
-               + textBox3.Text + "}\n\\begin{tabular}{| "
+            string startstr = "\\begin{table}[h!]\n"+ customsizedcolumns+"\\caption{"
+               + textBox3.Text + "}\n\\centering\n" + aligntopapersize0 + "\\begin{tabular}{| "
                + columns + "|}\\hline\\hline\n";
-            string endstr = "\\end{tabular}\n\\label{table:" + textBox4.Text +"}\n\\end{table}\n";
+            string endstr = "\\end{tabular}"+ aligntopapersize1 +"\n\\label{table:" + textBox4.Text +"}\n\\end{table}\n";
 
             string strlatex = "";
             string strlatex2 = "";
@@ -77,6 +94,31 @@ namespace ConvertTablestolatex
         private void textBox3_Click(object sender, EventArgs e)
         {
             textBox3.SelectAll();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            string[] lines = System.IO.File.ReadAllLines("config.cfg");
+            List<char> selected = new List<char>();
+            for(int i = 0; i<lines.Count();i++)
+            {
+                string[] tline = lines[i].Split(';');
+                selected.Add(tline[0][0]);
+                lines[i] = tline[1];
+            }
+            checkedListBox1.Items.AddRange(lines);
+            checkedListBox1.CheckOnClick = true;
+            for (int i = 0; i <= (checkedListBox1.Items.Count - 1); i++)
+            {
+                if (selected[i] == '1')
+                {
+                    checkedListBox1.SetItemCheckState(i, CheckState.Checked);
+                }
+                else
+                {
+                    checkedListBox1.SetItemCheckState(i, CheckState.Unchecked);
+                }
+            }
         }
     }
 }
